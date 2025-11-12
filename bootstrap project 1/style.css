@@ -1,0 +1,74 @@
+/* Reset Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  background-color: #1e2a38;
+  color: #fff;
+  font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100%;
+}
+
+/* Section Backgrounds */
+.container-fluid {
+  background-color: #25303f;
+  color: #fff;
+}
+
+/* Headings */
+h1 {
+  letter-spacing: -0.02em;
+}
+
+/* Primary Button */
+#btn1 {
+  background-color: #22e7a1;
+  color: #000;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+#btn1:hover {
+  background-color: #1ac98b;
+}
+
+/* Secondary Button */
+#btn2 {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+#btn2:hover {
+  background-color: #22e7a1;
+  color: #000;
+  border-color: #22e7a1;
+}
+
+/* Icon Highlight */
+#icon2 {
+  color: #22e7a1;
+  border-radius: 8px;
+}
+
+/* Accent Color */
+#color {
+  color: #22e7a1;
+}
+
+/* Swiper Container */
+.swiper {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Optional: Improve image responsiveness inside Swiper */
+.swiper-slide img {
+  max-height: 200px;
+  object-fit: contain;
+}
