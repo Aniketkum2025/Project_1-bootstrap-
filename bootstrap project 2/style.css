@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#secion1 {
+    background-color: #3b71b7;
+}
+
+#orange {
+    color: #ef7f1b;
+}
+
+#blue {
+    color: #007bc6;
+}
+
+.custom-list {
+    list-style: none;
+}
+
+#section1 {
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100;
+    height: 100vh;
+
+}
+
+#leftcol {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+form {
+    background: linear-gradient(to right, #ef7f1b, #007bc6);
+
+    justify-content: center;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+select {
+    padding: 5px;
+    margin: 5px;
+}
+
+form {
+    height: 550px;
+    width: 500px;
+}
+
+#btn1 {
+    color: #fffbf7;
+    background-color: #ef5e1b;
+    border: none;
+
+}
+#btn2 {
+    color: #fffbf7;
+    background-color: #2f1083;
+    border: none;
+    font-size: 12px;
+
+}
+
+strong {
+    text-shadow: rgb(8, 8, 8);
+}
+
+#data{
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: left;
+  width: 150px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+#data::before,
+#data::after {
+  content: "";
+  position: absolute;
+  background-color: #311b6b; /* your theme color */
+}
+
+#data::before {
+  height: 2px;
+  width: 20px;
+  left: 0;
+  top: 0;
+}
+
+#data::after {
+  height: 2px;
+  width: 20px;
+  bottom: 0;
+  right: 0;
+}
+
+#doctor
+{
+margin-left: 200px ;
+}
+
+
+/* small swiper */
+
+#carouselExampleControlsNoTouching{
+    height: 50vh;
+    width: 500%;
+}
+
+#small-img{
+    height: 20px;
+    width: 20px;
+}
+
+/* before & after */
+
+/* #data::after
+#data::before{
+    position: absolute;
+    content: "";
+    background-color: #13398d;
+}
+
+#data::after{
+    height: 20px;
+    width: 2px;
+    bottom: 0;
+    right: 0;
+} */
