@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+      background-color: #1e2a38;
+      color: white;
+      font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      width: 100%;
+    }
+
+    .container-fluid {
+    background-color: #25303f;
+    color: white;
+}
+
+h1 {
+    letter-spacing: -0.02em;
+}
+
+#btn1{
+    background-color: #22e7a1;
+    color: black ;
+}
+
+
+#btn2{
+    background-color: white transparent;
+    color: white ;
+    border: wi;
+}
+
+
+
+#icon2 {
+    color: #22e7a1;
+    background-color: #22e7a1 transparent;
+    border-radius: 8px;
+}
+
+#color{
+    color: #22e7a1;
+
+}
+
+.swiper {
+ max-width: 5000px;
+  max-height: 1000px;
+}

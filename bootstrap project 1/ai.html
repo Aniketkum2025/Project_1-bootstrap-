@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .progress {
+            height: 6px;
+            background-color: #2c3e50;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            background-color: #22e7a1 !important;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            #1 .col-8 .p-5.d-flex > .col-4 {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                padding: 0 0.5rem;
+            }
+            #1 .text-start.mx-5 {
+                margin-left: 1rem !important;
+                margin-right: 1rem !important;
+            }
+            #1 .p-5, #2 .p-5, #3 .p-5, #4 .p-5, #6 .p-5, #8 .p-5, #9 .p-5, #10 .p-5, #11 .p-5 {
+                padding: 1.5rem !important;
+            }
+            #2 .col-4, #3 .col-6, #4 .col-lg-8, #4 .col-lg-4, #6 .col-5, #6 .col-7, #8 .col-6, #9 .col-6, #11 .col-5, #11 .col-7 {
+                padding: 1rem !important;
+            }
+            .fs-2 { font-size: 1.25rem !important; }
+            .fs-1 { font-size: 2rem !important; }
+            .fs-3 { font-size: 1.5rem !important; }
+            .fs-5 { font-size: 1rem !important; }
+            #3 .row.text-center.p-5.m-5 > .col-4 { margin-bottom: 1rem; }
+            #4 .m-3 { margin-left: 0.5rem !important; margin-right: 0.5rem !important; }
+            #4 .m-5 { margin: 1rem !important; }
+            #4 .d-flex.flex-wrap.justify-content-between.gap-3 > div { flex: 1 1 45% !important; margin-bottom: 0.5rem; }
+            #6 .row > .col-4.py-5.d-flex { flex-direction: column !important; align-items: center !important; }
+            #8 .row.gx-4 .col-6 { width: 100% !important; margin-bottom: 1rem; }
+            #9 .col-6.p-4 > .row.py-5, #9 .col-6.p-4 > .row.pt-5 { padding: 1rem !important; }
+            #11 .ms-3 { margin-left: 0.5rem !important; }
+            #11 input, #11 textarea { width: 100% !important; margin-bottom: 0.5rem; }
+            #11 .pt-4.ms-3 button { width: 100% !important; }
+            #12 .d-flex.justify-content-center { flex-wrap: wrap; justify-content: center !important; }
+            .swiper { padding: 10px !important; }
+        }
+
+        @media (max-width: 576px) {
+            .p-5, .p-3, .p-2, .p-4 { padding: 1rem !important; }
+            #1 .mx-5, #2 .mx-5, #3 .mx-5, #4 .mx-5, #8 .mx-5, #9 .mx-5, #11 .mx-5 { margin-left: 0 !important; margin-right: 0 !important; }
+            #1 .d-flex > .col-4 { flex: 1 1 100% !important; text-align: center; margin-bottom: 1rem; }
+            #3 .row.text-start.align-items-center > .col-6 { width: 100% !important; }
+            #4 h2 { font-size: 1.25rem !important; }
+            #4 .d-flex.flex-wrap.justify-content-between.gap-3 > div { flex: 1 1 100% !important; }
+            #6 .row .col-5, #6 .row .col-7, #8 .row .col-6, #9 .row .col-6, #11 .row .col-5, #11 .row .col-7 { width: 100% !important; }
+            #11 .col-6 { flex: 0 0 100%; max-width: 100%; }
+            #11 .d-flex.align-items-center { flex-direction: column; text-align: center; gap: 0.5rem; }
+            #11 .ms-4 { margin-left: 0 !important; }
+            #12 .d-flex > i { margin: 0 0.5rem; }
+            .swiper-slide img { height: 200px !important; width: 100% !important; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="1">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-8 position-relative top-50 text-start">
+                    <div class="p-5 ">
+                        <h1 class="">Creative Designer &</h1>
+                        <h1 id="color" class="">Visual Storyteller</h1>
+                    </div>
+                    <div class="text-start mx-5">
+                        <p class="flex-wrap fs-2">Crafting meaningful digital experiences through thoughtful design and
+                            innovative solutions. I blend creativity with strategy to bring brands to life and connect
+                            with audiences on a deeper level.</p>
+                    </div>
+                    <div class="p-5">
+                        <button id="btn1" type="button" class="btn btn-succes rounded-2 m-2">View My Work</button>
+                        <button type="button" class="btn btn-outline-light m-2">Get In Touch</button>
+                    </div>
+                    <div class="p-5 d-flex">
+                        <div class="col-4 mx-5">
+                            <h1 id="color">50+</h1>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="col-4  mx-5">
+                            <h1 id="color">3+</h1>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="col-4  mx-5">
+                            <h1 id="color">25+</h1>
+                            <p>Happy Clients
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-5">
+                    <div class="col-12 position-relative top-25">
+                        <img src="./profile2.jpg" class="w-100 rounded-5" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="2" class=""">
+        <div class=" container-fluid">
+        <div class="row text-center  py-5">
+            <h1 class="mb-1 fw-light">Hi, I'm Mark Andersen</h1>
+            <p class="fs-6 w-100 fw-lighter">Digital Product Designer & Creative Strategist</p>
+        </div>
+        <div class="row ">
+            <div class="col-4 p-5">
+                <div class="p-3">
+                    <img src="./profile.jpg" class="rounded-4 w-100 " alt="">
+                </div>
+                <div class="m-1 p-3 d-flex">
+                    <div id="icon2">
+                        <i class="fa-solid fa-location-dot fs-6">
+                        </i>
+                    </div>
+                    <div class="">
+                        <span class="m-1 ">San Francisco, CA</span>
+                    </div>
+                </div>
+
+                <div class="m-1 p-3 d-flex">
+                    <div class="">
+                        <i id="icon2" class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="">
+                        <span class="m-1 ">Available for projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 text-center p-5">
+                <div class="text-start">
+                    <p class="p-1 m-2 fs-5">I craft digital experiences that bridge the gap between user needs and
+                        business goals. With 7
+                        years
+                        of experience in product design, I've helped startups and Fortune 500 companies create
+                        meaningful
+                        connections with their users.</p>
+
+                    <p class="p-1 m-2 ">My design philosophy centers around empathy, iteration, and impact. I
+                        believe great design isn't
+                        just about aesthetics—it's about solving real problems and creating value for both users and
+                        businesses.</p>
+                </div>
+
+                <div class="pt-4">
+                    <div class="d-flex d-inline align-items-center">
+                        <div id="icon2"><i
+                                class="fa-solid fa-lightbulb border border-success rounded-1 mx-3 py-1 fs-1"></i>
+                        </div>
+                        <div class="text-start">
+                            <h4 class="fs-3 m-2">Product Strategy</h4>
+                            <p class=" m-2">User research, journey mapping, and strategic design thinking</p>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex d-inline align-items-center">
+                        <div id="icon2"><i
+                                class="fa-solid fa-mobile-screen-button border border-success rounded-1 mx-3 py-1 fs-1 "></i>
+                        </div>
+                        <div class="text-start">
+                            <h4 class="fs-3 m-2">Mobile & Web Design</h4>
+                            <p>Responsive interfaces and seamless user experiences</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex d-inline align-items-center">
+                        <div id="icon2">
+                            <i class="fa-solid fa-chart-simple border border-success rounded-1 mx-3 py-1 fs-1 "></i>
+                        </div>
+                        <div class="text-start">
+                            <h4 class="fs-3 m-2">Design Systems</h4>
+                            <p>Scalable component libraries and brand consistency</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <p class="fst-italic text-start">Good design is not about perfection—it's about understanding,
+                        empathy, and
+                        continuous learning from the people who use what we create.</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <section id="3">
+        <div class="container-fluid ">
+            <div class="row text-start  align-items-center ">
+                <div class="col-6 p-5">
+                    <div class="d-inline">
+                        <h1 class="fs-1 fw-light">Let's create something amazing together</h1>
+                        <p class="">Whether you're looking to redesign an existing product or build something completely
+                            new, I'd love to explore how we can bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="col-6 text-start align-self-center">
+                    <div class="p-5 align-content-center">
+                        <button id="btn1" type="button" class="btn btn-succes rounded-2 m-2 ">View Case Studies</button>
+                        <button type="button" class="btn btn-outline-light m-2">Start a Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center p-5 m-5 ">
+                <div class="col-4">
+                    <h1>127</h1>
+                    <p>Voluptas nulla pariatur</p>
+                </div>
+                <div class="col-4">
+                    <h1>89K</h1>
+                    <p>Nostrum exercitationem</p>
+                </div>
+                <div class="col-4">
+                    <h1>234+</h1>
+                    <p>Temporibus autem</p>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-4 py-5 d-flex justify-content-evenly">
+                    <div class="d-flex text-start">
+                        <div id="icon2" class="align-content-center p-2">
+                            <i class="fa-solid fa-trophy border border-success rounded-1 mx-3 py-1 fs-4 "></i>
+                        </div class=" align-content-center">
+                        <div class="text-start">
+                            <h4 class="text-start">Excellence Award</h4>
+                            <p>Ut enim ad minima veniam quis
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-4 py-5 d-flex justify-content-evenly">
+                    <div class="d-flex">
+                        <div id="icon2" class="align-content-center p-2">
+                            <i class="fa-solid fa-star border border-success rounded-1 mx-3 py-1 fs-4 "></i>
+                        </div>
+                        <div class="">
+                            <h4 class="text-start">
+                                Recognition</h4>
+                            <p>Sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 py-5 d-flex justify-content-evenly">
+                    <div class="d-flex">
+                        <div id="icon2" class="align-content-center p-2">
+                            <i class="fa-solid fa-diamond border border-success rounded-1 mx-3 py-1 fs-4 "></i>
+                        </div>
+                        <div class="text-start">
+                            <h4 class="text-start">
+                                Innovation</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="4">
+        <div class="container-fluid">
+
+            <div class="text-center">
+                <h1 class="fw-light">Skills</h1>
+                <p class="p-1">
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                    Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                    ea.
+                </p>
+                <p class="p-1 text-secondary">
+                    Mastery achieved through continuous exploration and dedicated refinement of craft
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="text-start mx-3 pt-5">
+                        <h2>Technical Expertise</h2>
+                        <p>Core development and technical skills</p>
+                    </div>
+
+                    <div class="border-top border-secondary m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Full-Stack Development</span>
+                        <span class="">92%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 5px;">
+                        <div class="progress-bar bg-info" style="width:92%"></div>
+                    </div>
+
+                    <div class="m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Cloud Architecture</span>
+                        <span class="">88%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 2px;">
+                        <div class="progress-bar bg-info" style="width:88%"></div>
+                    </div>
+
+                    <div class="m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Database Design</span>
+                        <span class="">85%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 1px;">
+                        <div class="progress-bar bg-info" style="width:85%"></div>
+                    </div>
+
+                    <div class="text-start mx-3 pt-5">
+                        <h2>Creative Design Expertise</h2>
+                        <p>Visual and user experience design</p>
+                    </div>
+
+                    <div class="border-top border-secondary m-3 pt-3 d-flex justify-content-between">
+                        <span class="">UI/UX Design</span>
+                        <span class="">94%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 5px;">
+                        <div class="progress-bar bg-info" style="width:94%"></div>
+                    </div>
+
+                    <div class=" m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Brand Identity</span>
+                        <span class="">86%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 2px;">
+                        <div class="progress-bar bg-info" style="width:86%"></div>
+                    </div>
+
+                    <div class="m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Motion Graphics</span>
+                        <span class="">78%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 1px;">
+                        <div class="progress-bar bg-info" style="width:78%"></div>
+                    </div>
+
+                    <div class="text-start mx-3 pt-5">
+                        <h2>Strategic Leadership</h2>
+                        <p>Management and business acumen</p>
+                    </div>
+
+                    <div class="border-top border-secondary m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Project Management</span>
+                        <span class="">90%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 5px;">
+                        <div class="progress-bar bg-info" style="width:90%"></div>
+                    </div>
+
+                    <div class="m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Team Coordination</span>
+                        <span class="">87%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 2px;">
+                        <div class="progress-bar bg-info" style="width:87%"></div>
+                    </div>
+
+                    <div class="m-3 pt-3 d-flex justify-content-between">
+                        <span class="">Strategic Planning</span>
+                        <span class="">83%</span>
+                    </div>
+                    <div class="progress mx-3" style="height: 1px;">
+                        <div class="progress-bar bg-info" style="width:83%"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ">
+                    <div class="text-center pt-4 rounded-2 m-5" style="border: 1px solid grey
+        ">
+                        <i id="color" class="fa fa-trophy fa-2x"></i>
+                        <h4 class="p-2">Years of Experience</h4>
+                        <h2 id="color">8 <span class="fs-6 text-light">Years</span></h2>
+                        <p class="mx-3">
+                            Dedicated to mastering the craft of digital innovation and strategic problem-solving.
+                        </p>
+                    </div>
+
+                    <div class=" rounded m-3 pt-3"">
+                      <h5 class=" text-start px-3 fw-normal">Primary Technologies</h5>
+
+                        <!-- Add gap-3 for even spacing -->
+                        <div class="d-flex flex-wrap justify-content-between p-2  gap-3">
+
+                            <div class="text-center d-flex justify-content-start rounded w-100 p-2 pt-3"
+                                style="border: 1px solid grey;">
+                                <i id="color" class="fa fa-file pt-1"></i>
+                                <h5 class="mx-2 fw-normal fs-6">JavaScript</h5>
+                            </div>
+
+                            <div class="text-center d-flex justify-content-start rounded w-100 p-2 pt-3"
+                                style="border: 1px solid grey;">
+                                <i id="color" class="fa fa-code pt-1"></i>
+                                <h6 class="mx-2 fw-normal">React</h6>
+                            </div>
+
+                            <div class="text-center d-flex justify-content-start rounded w-100 p-2 pt-3"
+                                style="border: 1px solid grey;">
+                                <i id="color" class="fa fa-server pt-1"></i>
+                                <h6 class="mx-2 fw-normal">Node.js</h6>
+                            </div>
+
+                            <div class="text-center d-flex justify-content-start rounded w-100 p-2 pt-3"
+                                style="border: 1px solid grey;">
+                                <i id="color" class="fa fa-cloud pt-1"></i>
+                                <h6 class="mx-2 fw-normal">AWS</h6>
+                            </div>
+
+                            <div class="text-center d-flex justify-content-start rounded w-100 p-2 pt-3"
+                                style="border: 1px solid grey;">
+                                <i id="color" class="fa fa-paint-brush pt-1"></i>
+                                <h6 class="mx-2 fw-normal">Figma</h6>
+                            </div>
+
+                            <div class="text-center d-flex justify-content-start rounded w-100 p-2 pt-3"
+                                style="border: 1px solid grey;">
+                                <i id="color" class="fa fa-car pt-1"></i>
+                                <h6 class="mx-2 fw-normal">Docker</h6>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="">
+                        <h5 class="text-start px-3  p-4 fw-normal">Recent Achievements
+                        </h5>
+                        <div>
+                            <div class=" row text-start mx-3 pb-2 pb-2 border-bottom border-secondary">
+                                <div>
+                                    <span id="color">2024</span>
+                                    <span class="mx-3">Certified Kubernetes Administrator</span>
+                                </div>
+                            </div>
+
+                            <div class=" row text-start mx-3 pt-5 pb-2 border-bottom border-secondary">
+                                <div>
+                                    <span id="color">2023</span>
+                                    <span class="mx-3">Google Cloud Professional Architect</span>
+                                </div>
+                            </div>
+
+                            <div class=" row text-start mx-3 pt-5 pb-2 border-bottom border-secondary">
+                                <div>
+                                    <span id="color">2023</span>
+                                    <span class="mx-3">AWS Solutions Architect Pro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="5">
+        <div class=" container-fluid p-5 border-bo text-center">
+            <h1 class="border-bottom border-success pb-2 fw-light text-s">Resume</h1>
+            <p class="p-2">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+    </section>
+
+
+    <section id="6">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5"">
+                    <div class=" text-start p-4 border-start border-success ">
+                        <div class=" d-flex justify-content-start pb-2 text-start">
+                    <i class="fa fa-bag-shopping d-flex justify-content-center align-items-center"
+                        style="background-color: #25614c; color: #22e7a1; width: 60px; height: 60px; border-radius: 50%; font-size: 24px;">
+                    </i>
+                </div>
+                <div>
+                    <h1 class="fw-light">Professional Experience</h1>
+                    <p class="text-secondary fs-5">Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque
+                        laudantium totam rem aperiam.</p>
+                </div>
+
+                <div class="">
+                    <div class="row">
+                        <div class="pt-5 d-flex flex-column gap-3">
+                            <div>
+                                <h5 id="color">2023 - Present</h5>
+                            </div>
+                            <div>
+                                <h2 class="fs-5">Creative Director</h2>
+                                <h5>Innovation Studios Ltd</h5>
+                            </div>
+                            <div>
+                                <p class="fs-6 text-secondary">
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                    sed quia consequuntur magni dolores eos qui ratione.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="border rounded-5 px-3 py-1 fs-6">Team Leadership</span>
+                                <span class="border rounded-5 px-3 py-1 fs-6">Strategic Planning</span>
+                                <span class="border rounded-5 px-3 py-1 fs-6">Creative Vision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="pt-5 d-flex flex-column gap-3">
+                            <div>
+                                <h5 id="color">2020 - 2023</h5>
+                            </div>
+                            <div>
+                                <h2 class="fs-5">Senior Product Designer</h2>
+                                <h5>Digital Innovations Corp</h5>
+                            </div>
+                            <div>
+                                <p class="fs-6 text-secondary">
+                                    Ut enim ad minima veniam quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam nisi ut aliquid ex ea commodi.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="pt-5 d-flex flex-column gap-3">
+                                    <div>
+                                        <h5 id="color">2017 - 2020</h5>
+                                    </div>
+                                    <div>
+                                        <h2 class="fs-5">UX/UI Designer</h2>
+                                        <h5>Creative Solutions Agency</h5>
+                                    </div>
+                                    <div>
+                                        <p class="fs-6 text-secondary">Quis autem vel eum iure reprehenderit
+                                            qui in ea voluptate velit esse quam nihil molestiae consequatur
+                                            vel illum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-7">
+            <div class="text-start p-4 gap-4">
+                <div class="d-flex justify-content-start pb-2 text-start">
+                    <i class="fa fa-user-graduate d-flex justify-content-center align-items-center"
+                        style="background-color: #25614c; color: #22e7a1; width: 60px; height: 60px; border-radius: 50%; font-size: 24px;">
+                    </i>
+                </div>
+                <div>
+                    <h1 class="fw-light">Education & Qualifications</h1>
+                    <p class="text-secondary fs-5">At vero eos et accusamus et iusto odio dignissimos
+                        ducimus
+                        qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                </div>
+
+                <div class="d-flex flex-column p-3 gap-4">
+
+                    <div class="row border border-secondary rounded-4 p-3">
+                        <div class="d-flex pt-3">
+                            <div class="d-flex justify-content-center align-items-center rounded-4"
+                                style="width: 60px; height: 60px; font-size: 24px; background-color: #25614c; color: #22e7a1;">
+                                <i class="fa fa-lightbulb"></i>
+                            </div>
+                            <div class="justify-content-start px-3">
+                                <h3>Master of Design</h3>
+                                <p>Tempus Design Institute</p>
+                                <span id="color">2015-2017</span>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p>Magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="d-flex py-1 rounded-5 justify-content-center w-50"
+                                style="background-color: #25614c; color: #22e7a1;">
+                                <span>Magna Cum Laude</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row border border-secondary rounded-4 p-3">
+                        <div class="d-flex pt-3">
+                            <div class="d-flex justify-content-center align-items-center rounded-4"
+                                style="width: 60px; height: 60px; font-size: 24px; background-color: #25614c; color: #22e7a1;">
+                                <i class="fa fa-mobile-screen-button"></i>
+                            </div>
+                            <div class="justify-content-start px-3">
+                                <h3>Bachelor of Arts</h3>
+                                <p>Creative Arts University</p>
+                                <span id="color">2011 - 2015</span>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla pariatur excepteur sint.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="py-5">
+                        <h2>Professional Certifications</h2>
+
+                        <div class="row border-bottom border-secondary p-3">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <i id="color" class="fa-brands fa-meta fs-2 rounded-5"
+                                        style="  background-color: #25614c; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;"></i>
+                                </div>
+
+                                <div class="text-start ms-4">
+                                    <span class="d-block fw-bold fs-5">Advanced UX Design</span>
+                                    <span class="text-secondary">Design Academy • 2022</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom border-secondary p-3">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <i id="color" class="fa-brands fa-meta fs-2 rounded-5"
+                                        style="  background-color: #25614c; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;"></i>
+                                </div>
+
+
+                                <div class="text-start ms-4">
+                                    <span class="d-block fw-bold fs-5">Digital Innovation Strategy</span>
+                                    <span class="text-secondary">Innovation Institute • 2021</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom border-secondary p-3">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <i id="color" class="fa-brands fa-meta fs-2 rounded-5"
+                                        style="  background-color: #25614c; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;"></i>
+                                </div>
+
+                                <div class="text-start ms-4">
+                                    <span class="d-block fw-bold fs-5">Leadership in Design</span>
+                                    <span class="text-secondary">Leadership Academy • 2020</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <section id="8">
+
+        <div class="container-fluid">
+
+            <div class="row text-center">
+                <div class="p-5 border-bo text-center">
+                    <h1 class="border-bottom border-success pb-2 fw-light text-s">Portfolio</h1>
+                    <p class="p-2">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                        suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row d-flex p-4 text-center">
+
+                    <ul class=" d-flex d-inline justify-content-between" style="list-style: none;">
+                        <li><a href="portfolio-12.webp" class="text-decoration-none  text-secondary"
+                                style="border-bottom: 2px solid #22e7a1;">All Work</a></li>
+                        <li><a href="portfolio-7.webp" class="text-decoration-none text-secondary">Branding</a></li>
+                        <li><a href="portfolio-9.webp" class="text-decoration-none text-secondary">Web Design</a></li>
+                        <li><a href="portfolio-11.webp" class="text-decoration-none text-secondary">Photography</a></li>
+                        <li><a href="portfolio-3.webp" class="text-decoration-none text-secondary"> Print Design</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="row text-center gx-4"> <!-- gx-4 adds horizontal spacing between columns -->
+                    <div class="col-6">
+                        <div class="row mb-4 align-items-start"> <!-- vertical spacing and alignment -->
+                            <div id="color" class="p-2 text-start">
+                                <img src="./portfolio-3.webp" alt="Web Application"
+                                    class="w-100 rounded-4 portfolio-img">
+                                Web Application
+                            </div>
+                            <div class="content text-start">
+                                <h2 class="fs-3 fw-light">Digital Workspace</h2>
+                                <p class="fs-6 text-secondary">Modern web application designed for remote collaboration
+                                    with intuitive user experience and clean aesthetics.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 align-items-start">
+                            <div id="color" class="p-2 text-start">
+                                <img src="./portfolio-7.webp" alt="Photography" class="w-100 rounded-4 portfolio-img">
+                                Photography
+                            </div>
+                            <div class="content text-start">
+                                <h2 class="fs-3 fw-light">Urban Narratives</h2>
+                                <p class="fs-6 text-secondary">Street photography series capturing the essence of
+                                    metropolitan life and human connections.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 align-items-start">
+                            <div id="color" class="p-2 text-start">
+                                <img src="./portfolio-9.webp" alt="Editorial Design"
+                                    class="w-100 rounded-4 portfolio-img">
+                                Editorial Design
+                            </div>
+                            <div class="content text-start">
+                                <h2 class="fs-3 fw-light">Annual Report Design</h2>
+                                <p class="fs-6 text-secondary">Sophisticated annual report combining data visualization
+                                    with compelling storytelling and premium print finishes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="row mb-4 align-items-start">
+                            <div id="color" class="p-2 text-start">
+                                <img src="./portfolio-11.webp" alt="Package Design"
+                                    class="w-100 rounded-4 portfolio-img">
+                                Package Design
+                            </div>
+                            <div class="content text-start">
+                                <h2 class="fs-3 fw-light">Artisan Collection</h2>
+                                <p class="fs-6 text-secondary">Luxury packaging design series celebrating traditional
+                                    craftsmanship with contemporary minimalist approach.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 align-items-start">
+                            <div id="color" class="p-2 text-start">
+                                <img src="./portfolio-12.webp" alt="E-commerce" class="w-100 rounded-4 portfolio-img">
+                                E-commerce
+                            </div>
+                            <div class="content text-start">
+                                <h2 class="fs-3 fw-light">Sustainable Commerce</h2>
+                                <p class="fs-6 text-secondary">Eco-conscious e-commerce platform design promoting
+                                    sustainable products with seamless shopping experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 align-items-start">
+                            <div id="color" class="p-2 text-start">
+                                <img src="./portfolio-11.webp" alt="Brand Identity"
+                                    class="w-100 rounded-4 portfolio-img">
+                                Brand Identity
+                            </div>
+                            <div class="content text-start">
+                                <h2 class="fs-3 fw-light">Elemental Branding</h2>
+                                <p class="fs-6 text-secondary">Comprehensive brand identity design focusing on natural
+                                    elements and sustainable business practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+    </section>
+
+
+    <section id="9">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <div class="p-5 border-bo text-center">
+                        <h1 class="border-bottom border-success pb-2 fw-light text-s">Services</h1>
+                        <p class="p-2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-6 p-4">
+                        <div class="row  py-5">
+                            <div class="d-flex justify-content-start pb-2 text-start ms-3">
+                                <i class="fa-solid fa-pizza-slice d-flex justify-content-center align-items-center"
+                                    style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                                </i>
+                            </div>
+                            <div class="p-2 ms-3">
+                                <h1 class="fw-light fs-4">Brand Identity Design</h1>
+                                <p class="text-secondary fs-6 mt-3">Crafting distinctive visual identities that capture
+                                    your
+                                    brand's essence and connect with your target audience through thoughtful design
+                                    systems.
+                                </p>
+                                <span id="color">LEARN MORE <i class="fa-solid fa-arrow-right p"></i></span>
+                            </div>
+                        </div>
+
+
+                        <div class="row pt-5">
+                            <div class="d-flex justify-content-start pb-2 text-start ms-3">
+                                <i class="fa fa-code d-flex justify-content-center align-items-center"
+                                    style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                                </i>
+                            </div>
+                            <div class="p-2 ms-3">
+                                <h1 class="fw-light fs-4">Web Development</h1>
+                                <p class="text-secondary fs-6 mt-3">Building modern, responsive websites and
+                                    applications
+                                    with clean code, optimal performance, and seamless user experiences across all
+                                    devices.
+                                </p>
+                                <span id="color">LEARN MORE <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-4">
+
+                        <div class="row py-5">
+                            <div class="d-flex justify-content-start  pb-2 text-start ms-3">
+                                <i class="fa-solid fa-mobile-screen-button d-flex justify-content-center align-items-center"
+                                    style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                                </i>
+                            </div>
+                            <div class="p-2 ms-3">
+                                <h1 class="fw-light fs-4">UI/UX Design</h1>
+                                <p class="text-secondary fs-6 mt-3">Designing intuitive interfaces and user experiences
+                                    that
+                                    balance aesthetics with functionality, ensuring every interaction feels natural and
+                                    purposeful.
+                                </p>
+                                <span id="color">LEARN MORE <i class="fa-solid fa-arrow-right p"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="row pt-5">
+                            <div class="d-flex justify-content-start pb-2 text-start ms-3">
+                                <i class="fa-solid fa-microphone d-flex justify-content-center align-items-center"
+                                    style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                                </i>
+                            </div>
+                            <div class="p-2 ms-3">
+                                <h1 class="fw-light fs-4">Digital Strategy</h1>
+                                <p class="text-secondary fs-6 mt-3">Developing comprehensive digital strategies that
+                                    align
+                                    with your business goals and maximize your online presence through data-driven
+                                    insights.
+                                </p>
+                                <span id="color">LEARN MORE <i class="fa-solid fa-arrow-right p"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="10">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="p-5 border-bo text-center">
+                    <h1 class="border-bottom border-success pb-2 fw-light text-s">Testimonials</h1>
+                    <p class="p-2">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+            </div>
+            <div class="container py-5 text-center">
+    <h2 class="text-center mb-4">Testimonials</h2>
+
+    <!-- Swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="./photo( work)/person-f-11.webp" class="img-fluid rounded" alt="Slide 1">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="./photo( work)/person-m-14.webp" class="img-fluid rounded" alt="Slide 2">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="./photo( work)/person-f-12.webp" class="img-fluid rounded" alt="Slide 3">
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="11">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="p-5 border-bo text-center">
+                    <h1 class="border-bottom border-success pb-2 fw-light text-s">Contact</h1>
+                    <p class="p-2">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-5">
+                    <div class="row p-3 py-5">
+                        <div class="d-flex justify-content-start pb-2 text-start ms-3">
+                            <i class="fa-solid fa-message d-flex justify-content-center align-items-center"
+                                style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                            </i>
+                        </div>
+                        <div class="p-2 ms-3">
+                            <h1 class="fw-light fs-4">Let's Connect</h1>
+                            <p class="text-secondary fs-5 mt-3">We're here to discuss your vision and explore how we can
+                                bring it to life together.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center p-3">
+                        <div>
+                            <i id="color" class="fa-solid fa-envelope rounded-5"
+                                style="  background-color: #25614c; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;font-size: 20px;"></i>
+                        </div>
+
+
+                        <div class="text-start ms-4  ">
+                            <span class="text-secondary">
+                                EMAIL US</span>
+                            <span class="d-block  fw-light fs-6">contact@example.com</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center p-3">
+                        <div>
+                            <i id="color" class="fa-solid fa-phone rounded-5"
+                                style="  background-color: #25614c; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;font-size: 20px;"></i>
+                        </div>
+
+
+                        <div class="text-start ms-4 ">
+                            <span class="text-secondary">CALL US</span>
+                            <span class="d-block  fw-light fs-6">+1 (555) 432-8976</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center p-3">
+                        <div>
+                            <i id="color" class="fa-solid fa-location-crosshairs rounded-5"
+                                style="  background-color: #25614c; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;font-size: 20px;"></i>
+                        </div>
+
+
+                        <div class="text-start ms-4 ">
+                            <span class="text-secondary">VISIT US</span>
+                            <span class="d-block  fw-light fs-6">547 Madison Avenue New York, NY 10022</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-7 pt-5">
+                    <div class="row p-2 ms-1">
+                        <h1 class="fs-3 fw-light">Send us a message</h1>
+                    </div>
+
+                    <div class="row ms-1">
+                        <div></div>
+                        <div class="col-6 p-2">
+                            <div>
+                                <label class="fs-6 p-2 text-start" for="Full Name">Full Name</label>
+                            </div>
+                            <input class="border border-secondary rounded-2 p-2" style="background-color: #2c3e50;"
+                                type="email" placeholder="">
+                        </div>
+
+                        <div class="col-6 p-2">
+                            <div><label class="fs-6 p-2 text-start" for="Email Address">Email Address</label></div>
+                            <input class="border border-secondary rounded-2 
+                            p-2" style="background-color: #2c3e50;" type="email" placeholder="">
+                        </div>
+                        <div class="row pt-4">
+                            <div><label class="fs-6 p-2 text-start" for="Email Address">Subject</label></div>
+                            <input class="border border-secondary rounded-2 p-2 ms-2" style="background-color: #2c3e50;"
+                                type="text" placeholder="">
+                        </div>
+
+                        <div class="row pt-4">
+                            <div><label class="fs-6 p-2 text-start" for="Email Address">Message</label></div>
+                            <textarea class="border border-secondary rounded-2 p-2 ms-2"
+                                style="background-color: #2c3e50;"></textarea>
+                        </div>
+                        <div class="pt-5 ms-"><button type="button"
+                                class="btn btn-success d-flex d-flex align-items-center ">Send Message<i
+                                    class="fa-solid fa-right-long ms-2 d-flex align-items-center"></i></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="12">
+        <div class="container-fluid">
+            <div class="text-center py-5">
+                <div class="row">
+                    <h2 class="fs-1 fw-light">Mark Andersen</h2>
+                    <p class="fs-6 fst-italic fw-light">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
+                        eligendi fuga maxime saepe commodi placeat.</p>
+                </div>
+                <div class="row py-2">
+                    <div class="d-flex justify-content-center   jus pb-2 text-start ms-3">
+                        <i class="fa-brands fa-twitter d-flex justify-content-center align-items-center mx-2"
+                            style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                        </i>
+                        <i class="fa-brands fa-instagram d-flex justify-content-center align-items-center mx-2"
+                            style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                        </i>
+                        <i class="fa-brands fa-facebook d-flex justify-content-center align-items-center mx-2"
+                            style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                        </i>
+                        <i class="fa-brands fa-linkedin d-flex justify-content-center align-items-center mx-2"
+                            style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                        </i>
+                        <i class="fa-brands fa-youtube
+                            d-flex justify-content-center align-items-center mx-2"
+                            style="background-color: #25614c; color: #22e7a1; width: 40px; height: 40px; border-radius: 50%; font-size: 20px;">
+                        </i>
+                    </div>
+                </div>
+
+                <div class="py-5">
+                    <h2 class="fs-6 pt-3 border-top border-secondary fw-light">Copyright <strong> Mark Andersen</strong>
+                        All Rights Reserved</h2>
+                    <h2 class="fs-6 fw-light">Designed by<strong id="color">
+                            BootstrapMade</strong></h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Init -->
+  <script>
+    var swiper = new Swiper(".swiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: { slidesPerView: 1, spaceBetween: 10 }, // mobile
+        768: { slidesPerView: 2, spaceBetween: 20 }, // tablet
+        992: { slidesPerView: 3, spaceBetween: 30 }  // desktop
+      }
+    });
+  </script>
+
+</body>
+</html>
